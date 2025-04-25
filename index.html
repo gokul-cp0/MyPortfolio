@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      
+      <link rel="stylesheet" href="style.css">
+      <title>Gokula Kannan S</title>
+
+  </head>
+  <body>
+    <div class="controller">
+                                   <!--Home nav-->
+      <nav class="navbar navbar-expand p-4 px-2 navbar-dark fixed-top sticky stickyFade">
+        <div class="container-fluid">
+          <a class="navbar-brand d-block d-lg-none" href="#">Gokula Kannan S</a>
+            <ul class="navbar-nav mx-auto d-none d-lg-flex stickyList">
+              <li class="nav-item"><a class="nav-link mx-lg-3 mx-md-2" href="#profile">Home</a></li>
+              <li class="nav-item"><a class="nav-link mx-lg-3 mx-md-2" href="#about">About</a></li>
+              <li class="nav-item"><a class="nav-link mx-lg-3 mx-md-2" href="#projects">Projects</a></li>
+              <li class="nav-item"><a class="nav-link mx-lg-3 mx-md-2" href="#contact">Contact</a></li>
+            </ul>
+          <button class="d-block d-lg-none navButton" type="button" onclick="HandleClick()"><i class="fa-solid fa-bars fa-lg navButtonIcon"></i></button>
+        </div>
+      </nav>
+                                  <!--Mobile nav-->
+      <nav class="toggleMobileNav d-lg-none">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="#profile">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+      </nav>
+                                    <!--Home Section-->
+        <section id="profile">
+          <div class="title-text">
+            <div class="title-text-align">
+              <span>Hi, I'm</span>
+              <h1>Gokula Kannan</h1>
+              <h3>web Developer</h3>
+              <div class="resume_social">
+                <div class="resume_button my-3">
+                  <a href="Assets/Gokul_Resume.pdf" type="button" download="Gokul's Resume" target="_blank" class="cv-button"><span class="cv-span">Get My Resume<i class="fa-regular fa-file ms-3"></i></span></a>
+                </div>
+                <div class="socialIcon ms-md-5 pt-sm-5">
+                  <a class="socialIcon-align" target="_blank" href="https://www.linkedin.com/in/gokula-kannan-s-merndev/"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a class="socialIcon-align" target="_blank" href="https://github.com/gokul-cp0"><i class="fa-brands fa-github"></i></a>
+                  <a class="socialIcon-align" target="_blank" href="mailto:gokulakannan.sj7@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="title-pic">
+            <div class="image">
+              <img src="Assets/Profile.jpg">
+            </div>
+          </div>
+        </section>
+                                  <!--About Section-->
+        <section id="about">
+          <h1>About Me</h1>
+            <div class="wrap-about">
+              <div class="about-image">
+                <div class="about-imageDiv">
+                  <img src="Assets/Profile.jpg">
+                </div>
+                <div class="about-paraDiv">
+                  <p class="about-para">Hello, I'm <span class="about-name">Gokula Kannan</span>, a web developer who focused on using the MERN stack to create full-stack applications. I like turning ideas into functional,  clean and useful websites. I like working on real-world projects, learning new technologies, and coding.</p>
+                </div>
+              </div>
+              <div class="about-text">
+                <div class="education">
+                  <h4>Education</h4>
+                  <div class="education-list">
+                    <h6>MERN Full Stack Development Certification</h6>
+                    <p class="education-para">Yuva Sakthi Academy, Coimbatore | <span class="year-color">Jan 2025 - Apr 2025</span></p>
+                  </div>
+                  <div class="education-list">
+                    <h6>Bachelor of Science in Mathematics</h6>
+                    <p class="education-para">Yadava College of Arts & Science, Madurai | <span class="year-color">2018-2021</span></p>
+                  </div>
+                </div>
+                <div class="skills">
+                  <h4>Skills</h4>
+                 <h6>Development & Programming : </h6>
+                  <div class="skillsIcon">
+                   <div class="skill-icon-span"><i class="fa-brands fa-html5" style="color: #ff5900;"></i>HTML</div>
+                   <div class="skill-icon-span"><i class="fa-brands fa-css3-alt" style="color: #007bc7;"></i>CSS</div>
+                   <div class="skill-icon-span"><i class="fa-brands fa-js" style="color: #FFD43B;"></i>JavaScript</div>
+                   <div class="skill-icon-span"><i class="fa-brands fa-bootstrap" style="color: #8412fa;"></i>Bootstrap</div>
+                   <div class="skill-icon-span"><i class="fa-brands fa-react" style="color: #6bbfff;"></i>React.js</div>
+                   <div class="skill-icon-span"><i class="fa-solid fa-database" style="color: #98deff;"></i>MySQL</div>
+                   <div class="skill-icon-span"><i class="fa-solid fa-leaf" style="color: #00a85a;"></i>MongoDB</div>
+                   <div class="skill-icon-span"><i class="fa-brands fa-node-js" style="color: #509941;"></i>Node.js</div>
+                   <div class="skill-icon-span"><i class="fa-brands fa-node" style="color: #85ba27;"></i>Express.js</div>
+                  </div>
+                  <h6>Tools & Platforms : </h6>
+                  <div class="skillsIcon">
+                    <div class="skill-icon-span"><i class="fa-solid fa-code" style="color: #24a0ff;"></i>VS Code</div>
+                    <div class="skill-icon-span"><i class="fa-brands fa-github" style="color: white;"></i>GitHub</div>
+                    <div class="skill-icon-span"><i class="fa-solid fa-pencil" style="color: #c012fa;"></i>Canva</div>
+                    <div class="skill-icon-span"><i class="fa-regular fa-file-excel" style="color: #00804f;"></i>Excel</div>
+                    <div class="skill-icon-span"><i class="fa-regular fa-file-word" style="color: #005eff;"></i>MS Word</div>
+                    <div class="skill-icon-span"><i class="fa-regular fa-file-lines" style="color: #00804f;"></i>Google Sheets</div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+        <section id="projects">
+          <h1>My Projects</h1>
+          <div class="align-projects">
+            <div class="projectDiv">
+              <img class="project-image" src="Assets/projects_img/curdOperations.png" alt="project img">
+              <h5 class="project-name my-2">Student Management (CRUD)</h5>
+              <p class="project-para">A simple Student Management System using React.js and Node.js with Express & MongoDB </p>
+              <a class="project-button-git" href="https://github.com/gokul-cp0/CrudOperations" target="_blank">GitHub</a>
+            </div>
+            <div class="projectDiv mx-md-2">
+              <img class="project-image" src="Assets/projects_img/router&validate.png" alt="project img">
+              <h5 class="project-name my-2">Form validation and Routing</h5>
+              <p class="project-para">A basic React application that shows how to use React Router for page navigation and client-side authentication for user login and signup.</p>
+              <a class="project-button-demo" href="https://gokul-cp0.github.io/Validation-and-Router/" target="_blank">Live Demo</a>
+              <a class="project-button-git" href="https://github.com/gokul-cp0/Validation-and-Router" target="_blank">GitHub</a>
+            </div>
+            <div class="projectDiv">
+              <img class="project-image" src="Assets/projects_img/bookingForm.png" alt="project img">
+              <h5 class="project-name my-2">Booking form</h5>
+              <p class="project-para">A simple HTML and CSS booking form design that displays form structure and styling without backend functionality.</p>
+              <a class="project-button-demo" href="https://gokul-cp0.github.io/Room-booking-form/" target="_blank">Live Demo</a>
+              <a class="project-button-git" href="https://github.com/gokul-cp0/Room-booking-form/blob/main/index.html" target="_blank">GitHub</a>
+            </div>
+            <div class="projectDiv fourth-project">
+              <img class="project-image" src="Assets/projects_img/bootstrapWeb.jpg" alt="project img">
+              <h5 class="project-name my-2">Coming Soon...</h5>
+              <p class="project-para">responsive portfolio website built. using HTML, CSS, and Bootstrap</p>
+              <a class="project-button-demo" href="" target="_blank">Live Demo</a>
+              <a class="project-button-git" href="" target="_blank">GitHub</a>
+            </div>
+          </div>
+          <div class="text-center my-5">
+            <a id="see-more" onclick="seeMoreProject()" target="project_frame">See More</a>
+          </div>
+          <div class="popUp-project">
+            <button id="popUp-close" onclick="seeMoreProject()"><i class="fa-solid fa-xmark fa-lg navButtonIcon"></i></button>
+            <div class="popUp-project-image">
+                <iframe src="project_page.html" name="project_frame" class="bg-popUp-project"></iframe>
+            </div>
+          </div>
+        </section>
+        <section id="contact">
+          <h1>Contact Me</h1>
+          <div class="contact-details">
+            <div class="contactDiv">
+              <div class="contact-email">
+                <a href="mailto:gokulakannan.sj7@gmail.com" target="_blank" class="email-link"><i class="fa-regular fa-envelope"></i>gokulakannan.sj7@gmail.com</a>
+                <a href="tel:+917639986023" class="email-link"><i class="fa-solid fa-phone"></i>+917639986023</a>
+              </div>
+            </div>
+            <div class="contactDiv">
+              <iframe name="formSuccess" class="d-none"></iframe>
+              <form action="https://api.web3forms.com/submit" target="formSuccess" method="POST" class="contact-form" onsubmit="contactSubmit()">
+                <input type="hidden" name="access_key" value="65eb3ed8-fa82-4a9d-a58d-3adc6978527d">
+                <div>
+                  <div class="contact-form-input px-2"><input type="text" name="name" placeholder="Name" id="form-name" required></div>
+                  <div class="contact-form-input px-2"><input type="email" name="email" placeholder="Email" id="form-email" required></div>
+                </div>
+                <div class="contact-form-textarea px-2" style="margin-top: 20px;"><textarea name="message" id="form-message" class="mt-4" rows="9" placeholder="Your Message" required></textarea></div>
+                <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                <div class="contact-form-button text-center px-2 my-3"><button type="submit">Send <i class="fa-regular fa-paper-plane ms-1"></i></button></div>
+              </form>
+            </div>
+          </div>
+        </section>
+        <footer> © <span class="footer-text">Gokula Kannan S</span> | All rights reserved.</footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
