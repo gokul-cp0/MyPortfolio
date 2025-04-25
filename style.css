@@ -16,7 +16,9 @@ html{
     scroll-behavior: smooth;
 }
 body{
-   background:url(Assets/background-img.jpg) right/cover no-repeat;
+   background-image:url(Assets/Background.jpg);
+   background-position: center;
+   background-size: cover;
    background-attachment: fixed;
 }
 .controller{
@@ -409,7 +411,7 @@ body{
 .popUp-project-image{
     width: 80%;
     height: 90vh;
-    background: url(Assets/background-img.jpg) right/cover;
+    background: url(Assets/Background.jpg) right/cover;
 }
 .bg-popUp-project{
     width: 100%;
