@@ -702,6 +702,9 @@ footer{
     .about-text{
         padding: 0 10px;
     }
+    .about-para{
+        font-weight: normal;
+    }
     .wrap-about,.skill-icon-span{
         font-size: 10px;
     }
