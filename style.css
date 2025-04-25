@@ -414,7 +414,7 @@ body{
 .bg-popUp-project{
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: black;
     overflow: auto;
 }
                                  /*Contact Section*/
