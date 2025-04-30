@@ -4,7 +4,8 @@ const navButton = document.querySelector(".navButton");
 const navbarBrand=this.document.querySelector(".navbar-brand");
 const buttonIcon=document.querySelector('.navButtonIcon');
 const toggleMobileNav=document.querySelector(".toggleMobileNav");
-
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-link");
 
 window.addEventListener('scroll', function () {
     
@@ -25,8 +26,36 @@ window.addEventListener('scroll', function () {
 
     toggleMobileNav.classList.replace("show","hide");
     buttonIcon.classList.replace('fa-xmark','fa-bars');
-
 });
+
+  new Typed('.type-role', {
+    strings: ['Full Stack Developer','Web Developer','MERN Stack Developer'],
+    typeSpeed: 120,
+    backSpeed: 50,
+    backDelay: 1000,
+    loop: true,
+    showCursor: false,
+  });
+
+
+const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        const id = entry.target.getAttribute("id");
+        const navItem = document.querySelector(`.nav-link[href="#${id}"]`);
+        if (entry.isIntersecting) {
+          navLinks.forEach((link) => link.classList.remove("active"));
+          navItem.classList.add("active");
+        }
+      });
+    },
+    {
+      threshold: 0.6, // section visible % before it triggers
+    }
+  );
+  sections.forEach((section) => {
+    observer.observe(section);
+  });
 
 document.addEventListener("click",event=> {
     const clickElem=event.target;

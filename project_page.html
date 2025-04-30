@@ -8,137 +8,52 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Kanit", serif;
-            color: white;
-            letter-spacing: 1px;
-        }
-        :root{
-            --epic-color:rgb(0, 111, 111);
-            --second-color:rgba(0, 111, 111, 0.4);
-            --third-color:rgba(0, 111, 111, 0.2);
-        }
-        body{
-          padding: 30px;
-        }
-        .align-popUp-projects {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            align-items: stretch;
-        }
-        .projectDiv{
-            width:320px;
-            padding: 30px;
-            border-radius: 5px;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            text-align: center;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
-            margin-top: 20px;
-            
-        }
-        .project-image{
-            width: 100%;
-            object-fit: cover;
-            background-position: center;
-        }
-        .project-para{
-            font-weight: 100;
-            font-size: 14px;
-            text-align: start;
-        }
-        .projectDiv a{
-            text-decoration: none;
-            color: white;
-            font-weight:300;
-            font-size: 13px;
-            background-color: var(--second-color);
-            outline: none;
-            padding: 8px 20px;
-            margin: 0px 10px;
-            letter-spacing: 1px;
-            border-radius: 5px;
-        }
-        .projectDiv a:hover,#see-more:hover{
-            background-color: var(--third-color);
-            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-        }
-        .projectDiv a:active,#see-more:active{
-            background-color: var(--epic-color);
-        }
-        
-        @media screen and (max-width:1330px) {
-          body{
-            padding: 10px;
-          }
-          .projectDiv
-          {
-            width: 290px;
-          }
-          .projectDiv a{
-            padding: 8px 13px;
-            margin: 0 5px;
-          }
-          .project-name{
-            font-size: 15px;
-          }
-          .project-para{
-            font-size: 13px;
-          }
-        }
-        @media screen and (max-width:440px) {
-          .project-name{
-            font-size: 12px;
-          }
-          .project-para{
-            font-size: 10px;
-          }
-          .projectDiv a{
-            font-size: 10px;
-            padding: 8px 12px;
-          }
-
-        }
-
-        
-  
-    </style>
+      <link rel="stylesheet" href="styleForProject.css">
 </head>
-<body class="bg-transparent">
+<body class="bg-dark">
     <div>
       <h1 class="m-0 text-center">MyProjects</h1>
       </div>
       <div class="align-popUp-projects">
-        <div class="projectDiv">
+        <div class="popup-projectDiv">
+          <img class="project-image" src="Assets/Projects-Image/programmers-Hub.png" alt="project img">
+          <h5 class="project-name my-2">Programmer's Hub</h5>
+          <p class="project-para">Q&A website where programmers can ask questions, answer them, and interact with the community.this is a full-stack web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js) </p>
+          <a class="project-button-git" href="https://github.com/gokul-cp0/Programmers-Hub" target="_blank">GitHub</a>
+        </div>
+        <div class="popup-projectDiv">
           <img class="project-image" src="Assets/Projects-Image/curd-operations.png" alt="project img">
           <h5 class="project-name my-2">Student Management (CRUD)</h5>
-          <p class="project-para">A simple Student Management System using React.js and Node.js with Express & MongoDB </p>
+          <p class="project-para">A Student Management System using React.js and Node.js with Express & MongoDB </p>
           <a class="project-button-git" href="https://github.com/gokul-cp0/CrudOperations" target="_blank">GitHub</a>
         </div>
-        <div class="projectDiv mx-md-2">
+        <div class="popup-projectDiv">
+          <img class="project-image" src="Assets/Projects-Image/weather-app.png" alt="project img">
+          <h5 class="project-name my-2">Weather App</h5>
+          <p class="project-para"> It shows current weather detailswhen you type in a location. Made with HTML, CSS, and JavaScript, with a clean and attractive design.</p>
+          <a class="project-button-git" href="https://gokul-cp0.github.io/Weather-App/" target="_blank">Live Demo</a>
+          <a class="project-button-git" href="https://github.com/gokul-cp0/Weather-App" target="_blank">GitHub</a>
+        </div>
+        <div class="popup-projectDiv">
           <img class="project-image" src="Assets/Projects-Image/router-validate.png" alt="project img">
           <h5 class="project-name my-2">Form validation and Routing</h5>
-          <p class="project-para">A basic React application that shows how to use React Router for page navigation and client-side authentication for user login and signup.</p>
+          <p class="project-para">A React application that shows how to use React Router for page navigation and client-side authentication for user login and signup.</p>
           <a class="project-button-demo" href="https://gokul-cp0.github.io/Validation-and-Router/" target="_blank">Live Demo</a>
           <a class="project-button-git" href="https://github.com/gokul-cp0/Validation-and-Router" target="_blank">GitHub</a>
         </div>
-        <div class="projectDiv">
+        <div class="popup-projectDiv">
           <img class="project-image" src="Assets/Projects-Image/booking-Form.png" alt="project img">
           <h5 class="project-name my-2">Booking form</h5>
-          <p class="project-para">A simple HTML and CSS booking form design that displays form structure and styling without backend functionality.</p>
+          <p class="project-para">A HTML and CSS booking form design that displays form structure and styling.</p>
           <a class="project-button-demo" href="https://gokul-cp0.github.io/Room-booking-form/" target="_blank">Live Demo</a>
-          <a class="project-button-git" href="https://github.com/gokul-cp0/Room-booking-form/blob/main/index.html" target="_blank">GitHub</a>
+          <a class="project-button-git" href="https://github.com/gokul-cp0/Room-booking-form/" target="_blank">GitHub</a>
         </div>
-        <div class="projectDiv">
-          <img class="project-image" src="Assets/Projects-Image/booking-Form.png" alt="project img">
-          <h5 class="project-name my-2">Booking form</h5>
-          <p class="project-para">A simple HTML and CSS booking form design that displays form structure and styling without backend functionality.</p>
-          <a class="project-button-demo" href="https://gokul-cp0.github.io/Room-booking-form/" target="_blank">Live Demo</a>
-          <a class="project-button-git" href="https://github.com/gokul-cp0/Room-booking-form/blob/main/index.html" target="_blank">GitHub</a>
+        <div class="popup-projectDiv">
+          <img class="project-image" src="Assets/Projects-Image/Medical-Appoinment-Form.png" alt="project img">
+              <h5 class="project-name my-2">Medical Appoinment Form</h5>
+              <p class="project-para">A medical appointment form created with HTML and CSS to display its layout and styling.</p>
+              <a class="project-button-demo" href="https://gokul-cp0.github.io/Medical-Appointment-Form/" target="_blank">Live Demo</a>
+              <a class="project-button-git" href="https://github.com/gokul-cp0/Medical-Appointment-Form/" target="_blank">GitHub</a>
         </div>
       </div>
 </body>
