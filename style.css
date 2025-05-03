@@ -759,6 +759,9 @@ footer{
     footer{
         font-size: 10px;
     }
+    .popUp-project-image{
+        width: 100%;
+    }
     .projectDiv {
         width: 260px;
         padding: 20px;
