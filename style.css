@@ -50,9 +50,7 @@ body{
     transition:all .5s ease-in-out;
 }
 .stickyList li a:hover,.toggleMobileNav li a:hover{
-    color: white;
-    border-bottom: 4px solid var(--epic-color);
-    padding-bottom: 2px;
+    color: var(--epic-color);
     transform: scale(1.1);
 }
 .navbar-brand{
@@ -154,21 +152,6 @@ body{
     position: relative;
     top: -10px;
 }
-/* .type-textDiv .type-role::after{
-    content: '';
-    width: 3px;
-    height: 40px;
-    position: absolute;
-    background-color: gray;
-    right: -10px;
-    top: 22%;
-    animation: blink 1s infinite;
-}
-@keyframes blink{
-    50%{
-        opacity: 0;
-    }
-} */
 
 .title-text-align span{
     font-size: 22px;
@@ -181,7 +164,7 @@ body{
     display: inline-flex;
 }
 .cv-button{
-    border: none;
+    border: 1px solid var(--second-color);
     outline: none;
     padding: 10px 20px;
     background-color: var(--second-color);
@@ -196,6 +179,7 @@ body{
 }
 .cv-button:hover{
     background-color: var(--third-color);
+    box-shadow: 0px 0px 10px var(--second-color);
     transform: scale(1.03);
 }
 .cv-button:hover .cv-span{
@@ -219,7 +203,7 @@ body{
 }
 .socialIcon-align:hover{
     background-color: var(--third-color);
-    border:none;
+    box-shadow: 0px 0px 8px var(--second-color);
     transform: scale(1.04);
 }
 .socialIcon-align:active{
