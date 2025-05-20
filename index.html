@@ -9,6 +9,8 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      <link href="https://cdn.jsdelivr.net/npm/@coreui/coreui@5.0.0/dist/css/coreui.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://unpkg.com/@coreui/icons/css/all.min.css">
       
       <link rel="stylesheet" href="style.css">
       <title>Gokula Kannan S</title>
@@ -45,18 +47,28 @@
               <span>Hi, I'm</span>
               <h1>Gokula Kannan</h1>
               <div class="type-textDiv"><span class="type-role">Full Stack Developer</span></div>
-              <div class="resume_social">
-                <div class="resume_button my-3">
-                  <a href="Assets/Resume.pdf" type="button" download="Gokul's Resume" target="_blank" class="cv-button"><span class="cv-span">Get My Resume<i class="fa-regular fa-file ms-3"></i></span></a>
+              <div class="resume_social mt-sm-4">
+                <div class="resume_button">
+                  <a href="Assets/Resume.pdf" target="_blank" class="animated-button">
+                    <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                    </svg>
+                    <span class="text">Resume <i class="fa-regular fa-file ms-3"></i></span>
+                    <span class="circle"></span>
+                    <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                    </svg>
+                  </a>
                 </div>
-                <div class="socialIcon ms-md-5 pt-sm-5">
-                  <a class="socialIcon-align" target="_blank" href="https://www.linkedin.com/in/gokula-kannan-s-merndev/"><i class="fa-brands fa-linkedin-in"></i></a>
-                  <a class="socialIcon-align" target="_blank" href="https://github.com/gokul-cp0"><i class="fa-brands fa-github"></i></a>
-                  <a class="socialIcon-align" target="_blank" href="mailto:gokulakannan.sj7@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                <div class="socialIcon ms-md-5">
+                  <a class="socialIcon-align linkedin" target="_blank" href="https://www.linkedin.com/in/gokula-kannan-s-merndev/"><i viewBox="0 0 448 512" class="fa-brands fa-linkedin-in svgIcon"></i></a>
+                  <a class="socialIcon-align github" target="_blank" href="https://github.com/gokul-cp0"><i viewBox="0 0 448 512" class="fa-brands fa-github svgIcon"></i></a>
+                  <a class="socialIcon-align email" target="_blank" href="mailto:gokulakannan.sj7@gmail.com"><i viewBox="0 0 448 512" class="fa-regular fa-envelope svgIcon"></i></a>
                 </div>
               </div>
             </div>
           </div>
+          
           <div class="title-pic">
             <div class="image">
               <img src="Assets/Profile.jpg">
@@ -80,7 +92,7 @@
                   <h4>Education</h4>
                   <div class="education-list">
                     <h6>MERN Full Stack Development Certification</h6>
-                    <p class="education-para">Yuva Sakthi Academy, Coimbatore | <span class="year-color">Jan 2025 - Apr 2025</span></p>
+                    <p class="education-para">Yuva Sakthi Academy, Coimbatore | <span class="year-color">Oct 2024 - Apr 2025</span></p>
                   </div>
                   <div class="education-list">
                     <h6>Bachelor of Science in Mathematics</h6>
@@ -89,29 +101,32 @@
                 </div>
                 <div class="skills">
                   <h4>Skills</h4>
-                 <h6>Development & Programming : </h6>
-                  <div class="skillsIcon">
-                   <div class="skill-icon-span"><i class="fa-brands fa-html5" style="color: #ff5900;"></i>HTML</div>
-                   <div class="skill-icon-span"><i class="fa-brands fa-css3-alt" style="color: #007bc7;"></i>CSS</div>
+                 <h6>Frontend :</h6>
+                   <div class="skill-icon-span"><i class="fa-brands fa-react" style="color: #6bbfff;"></i>React.js</div>
+                   <div class="skill-icon-span"><i class="cib-redux" style="color: #7a50be;vertical-align: text-top;"></i>Redux</div>
                    <div class="skill-icon-span"><i class="fa-brands fa-js" style="color: #FFD43B;"></i>JavaScript</div>
                    <div class="skill-icon-span"><i class="fa-brands fa-bootstrap" style="color: #8412fa;"></i>Bootstrap</div>
-                   <div class="skill-icon-span"><i class="fa-brands fa-react" style="color: #6bbfff;"></i>React.js</div>
-                   <div class="skill-icon-span"><i class="fa-solid fa-database" style="color: #98deff;"></i>MySQL</div>
-                   <div class="skill-icon-span"><i class="fa-solid fa-leaf" style="color: #00a85a;"></i>MongoDB</div>
+                   <div class="skill-icon-span"><i class="cib-jquery" style="color: #28659e;vertical-align: middle;"></i>JQuey</div>
+                   <div class="skill-icon-span"><i class="fa-brands fa-html5" style="color: #ff5900;"></i>HTML</div>
+                   <div class="skill-icon-span"><i class="fa-brands fa-css3-alt" style="color: #007bc7;"></i>CSS</div><br>
+                 <h6>Backend :</h6>
                    <div class="skill-icon-span"><i class="fa-brands fa-node-js" style="color: #509941;"></i>Node.js</div>
                    <div class="skill-icon-span"><i class="fa-brands fa-node" style="color: #85ba27;"></i>Express.js</div>
-                  </div>
+                   <div class="skill-icon-span"><i class="fa-solid fa-gear" style="color: #feb9b9;"></i>RESTful API</div>
+                   <div class="skill-icon-span"><i class="cib-zapier me-1" style="color:#fb0960;vertical-align: text-top;"></i>JWT</div>
+                  <h6>Database :</h6>
+                   <div class="skill-icon-span"><i class="fa-solid fa-database" style="color: #08668e;"></i>MySQL</div>
+                   <div class="skill-icon-span"><i class="cib-mongodb" style="color: #00a85a;font-size: 22px;vertical-align: text-top;"></i>MongoDB</div>
+                   <div class="skill-icon-span"><i class="cib-postgresql" style="color: #396c94;vertical-align: middle;"></i>PostgreSQl</div><br>
                   <h6>Tools & Platforms : </h6>
-                  <div class="skillsIcon">
-                    <div class="skill-icon-span"><i class="fa-solid fa-code" style="color: #24a0ff;"></i>VS Code</div>
+                    <div class="skill-icon-span"><i class="cib-visual-studio-code me-1" style="color: #24a0ff;vertical-align: middle;"></i>VS Code</div>
                     <div class="skill-icon-span"><i class="fa-brands fa-git-alt" style="color: #f4511e;"></i>git</div>
                     <div class="skill-icon-span"><i class="fa-brands fa-github" style="color: white;"></i>GitHub</div>
+                    <div class="skill-icon-span"><i class="cib-postman me-2" style="color: #f76935;vertical-align: text-top;"></i>Postman</div>
                     <div class="skill-icon-span"><i class="fa-solid fa-pencil" style="color: #c012fa;"></i>Canva</div>
                     <div class="skill-icon-span"><i class="fa-regular fa-file-excel" style="color: #00804f;"></i>Excel</div>
                     <div class="skill-icon-span"><i class="fa-regular fa-file-word" style="color: #005eff;"></i>MS Word</div>
                     <div class="skill-icon-span"><i class="fa-regular fa-file-lines" style="color: #00804f;"></i>Google Sheets</div>
-                    
-                  </div>
                 </div>
               </div>
             </div>
@@ -122,12 +137,12 @@
             <div class="projectDiv">
               <img class="project-image" src="Assets/Projects-Image/programmers-Hub.png" alt="project img">
               <h5 class="project-name my-2">Programmer's Hub</h5>
-              <p class="project-para">Q&A website where programmers can ask questions, answer them, and interact with the community.this is a full-stack web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js) </p>
+              <p class="project-para">inspired by Stack Overflow Q&A website where programmers can ask questions, answer them, and interact with the community.this is a full-stack web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js) </p>
               <a class="project-button-git" href="https://github.com/gokul-cp0/Programmers-Hub" target="_blank">GitHub</a>
             </div>
             <div class="projectDiv mx-md-2">
               <img class="project-image" src="Assets/Projects-Image/curd-operations.png" alt="project img">
-              <h5 class="project-name my-2">Student Management (CRUD)</h5>
+              <h5 class="project-name my-2">Student Management</h5>
               <p class="project-para">A Student Management System with CRUD Operation  for managing student details like name, age, course, and marks. using React.js and Node.js with Express & MongoDB. </p>
               <a class="project-button-git" href="https://github.com/gokul-cp0/CrudOperations" target="_blank">GitHub</a>
             </div>
@@ -175,7 +190,7 @@
                 </div>
                 <div class="contact-form-textarea px-2" style="margin-top: 20px;"><textarea name="message" id="form-message" class="mt-4" rows="9" placeholder="Your Message" required></textarea></div>
                 <input type="hidden" name="redirect" value="https://web3forms.com/success">
-                <div class="contact-form-button text-center px-2 my-3"><button type="submit">Send <i class="fa-regular fa-paper-plane ms-1"></i></button></div>
+                <div class="contact-form-button text-center px-2 my-3"><button class="contact-btn" type="submit">Send <i class="fa-regular fa-paper-plane ms-1"></i></button></div>
               </form>
             </div>
           </div>
