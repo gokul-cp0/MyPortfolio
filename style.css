@@ -1030,6 +1030,9 @@ footer {
   .title-text-align span {
     font-size: 17px;
   }
+  .resume_social{
+    flex-direction: column;
+  }
 
   .about-text {
     padding: 0 10px;
